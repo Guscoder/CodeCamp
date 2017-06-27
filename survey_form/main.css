@@ -1,0 +1,121 @@
+body {
+  background-color: lightblue;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  background-color: white;
+  width: 70%;
+}
+
+main p {
+  padding-top: 25px;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+#title {
+  font-weight: bold;
+}
+
+select {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 25px;
+  height: 35px;
+  width: 140px;
+}
+
+.labelname,
+.inputfield {
+  width: 45%;
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.labelname {
+  text-align: right;
+}
+
+.inputfield input[type="text"],
+.inputfield input[type="email"],
+.inputfield input[type="number"],
+.inputfield textarea
+ {
+  width: 100%;
+  max-width: 350px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.rating,
+.improve,
+.commentbox {
+  vertical-align: top;
+}
+
+
+.radiobuttons ul,
+.checkboxes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.radiobuttons ul li,
+.checkboxes ul li {
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 100px;
+  width: 350px;
+}
+
+.submitbutton {
+  margin: 25px 0;
+  text-align: center;
+}
+
+#submit {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  height: 40px;
+  width: 100px;
+  border: 0;
+  border-radius: 5px;
+  -webkit-border-fit: clip;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+/***************** MEDIA QUERIES **************/
+
+
+@media (max-width: 480px) {
+  .labelname,
+  .inputfield {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .labelname {
+    text-align: left;
+  }
+}

@@ -1,0 +1,237 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #d3d3d3;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration:  none;
+  color: white;
+  cursor: pointer;
+}
+
+h2,p  {
+  margin: 0;
+}
+
+.container {
+  margin-top: 120px;
+}
+/*****************HEADER**********************/
+
+
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+header>img {
+  padding: 0 10px;
+}
+
+
+
+
+/*****************NAVIGATION**********************/
+
+.nav-bar {
+  margin-left: auto;
+}
+
+.nav-links li {
+  padding-right: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  list-style: none;
+}
+
+/*****************INPUT SECTION**********************/
+
+.form-entry {
+  flex: 1;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.form-entry {
+  margin: 2em 0;
+  padding-bottom: 2em;
+}
+
+input[type="email"] {
+  width: 175px;
+  line-height: 2.5;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
+input[type="submit"] {
+  background-color: #f1c10a;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-entry > * {
+  margin-top: 20px;
+}
+
+/*****************Info Section********************/
+
+.sw-icon {
+  flex: 1;
+  text-align: center;
+}
+
+
+.sw-icon>img {
+}
+.info-text {
+  flex: 3;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+
+/*****************Video Section********************/
+
+.video {
+  justify-content: center;
+  margin: 3em 0;
+}
+
+
+
+/*****************Pricing Section********************/
+
+.pricing {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pricing>.col {
+  flex: 1 0 250px;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.pricing>.col h2 {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.pricing-list li {
+  padding: .5em;
+}
+
+.pricing-list li:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pricing>.col>input{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+/*****************FOOTER********************/
+
+.footer {
+  align-items: center;
+}
+
+.footer>ul>li {
+  padding: 15px 10px;
+}
+
+.footer p{
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+/*****************MEDIA QUERIES********************/
+
+@media (max-width: 767px) {
+  
+  header {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-top: 40px; 
+      text-align: center;
+  }
+
+  .nav-bar {
+    margin-left: 0;
+  }
+
+  .container {
+    margin-top: 230px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+    .container {
+    margin-top: 280px;
+  }
+  
+  .info-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .info-text {
+    margin-top: 25px;
+  }
+
+  .info-text>h2 {
+    margin-bottom: 20px;
+  }
+}
+
